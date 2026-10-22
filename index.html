@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Keerthi ❤️ Our Story</title>
+<meta name="theme-color" content="#090407">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+:root{--bg:#090407;--card:#160b10;--card2:#1d0d14;--text:#f9f0f2;--muted:#bbaeb2;--pink:#f09aaa;--red:#b73555;--gold:#e5c18c;--line:rgba(255,190,205,.13)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;overflow-x:hidden}body.lock{overflow:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 20% 15%,rgba(190,44,83,.18),transparent 25%),radial-gradient(circle at 85% 70%,rgba(240,154,170,.10),transparent 25%);z-index:-2}
+.noise{position:fixed;inset:0;z-index:90;pointer-events:none;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+#hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:1}.heart{position:absolute;color:#e76b83;opacity:0;animation:float 8s linear infinite;font-size:12px}
+@keyframes float{0%{transform:translateY(20px) scale(.7);opacity:0}15%{opacity:.18}80%{opacity:.12}100%{transform:translateY(-110vh) translateX(35px) scale(1.2);opacity:0}}
+#progress{position:fixed;top:0;left:0;height:2px;background:linear-gradient(90deg,#a52c4b,#f5a4b5);width:0;z-index:100}
+#login{position:fixed;inset:0;z-index:80;display:grid;place-items:center;padding:20px;background:#070305;transition:1s}.login-out{opacity:0;transform:scale(1.05);pointer-events:none}
+.login-orb{position:absolute;width:650px;height:650px;border-radius:50%;background:radial-gradient(circle,rgba(198,45,83,.22),transparent 62%);filter:blur(20px)}
+.login-card{position:relative;width:min(510px,100%);padding:48px 32px;text-align:center;background:rgba(20,8,13,.78);border:1px solid var(--line);border-radius:28px;backdrop-filter:blur(28px);box-shadow:0 40px 130px #000;animation:up 1s ease}
+.eyebrow{font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:var(--pink)}.login-card h1{font:500 clamp(55px,12vw,88px)/.8 "Cormorant Garamond";margin:20px 0}.login-card p{color:var(--muted);line-height:1.8;font-size:13px}.field{text-align:left;margin:16px 0}.field label{display:block;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#bdaeb3;margin-bottom:8px}.field input{width:100%;padding:15px 16px;background:#0d0609;border:1px solid #39202a;border-radius:13px;color:white;outline:0}.field input:focus{border-color:var(--pink)}.btn{margin-top:5px;border:0;border-radius:999px;padding:14px 25px;background:linear-gradient(90deg,#bc3f5d,#e990a2);color:#21080f;font-weight:600;cursor:pointer}.error{height:18px;color:#f19aa7;font-size:11px;margin-top:10px}.hint{font-size:10px!important;color:#76666c!important}
+nav{position:fixed;z-index:40;top:17px;left:50%;transform:translateX(-50%);display:flex;gap:3px;max-width:calc(100% - 24px);overflow:auto;padding:6px;border:1px solid var(--line);background:rgba(18,6,11,.62);backdrop-filter:blur(20px);border-radius:999px}nav a{white-space:nowrap;color:#aa9da2;text-decoration:none;font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding:9px 12px;border-radius:999px}nav a:hover{background:rgba(240,154,170,.1);color:white}
+main{opacity:0;transition:opacity 1.2s}.ready{opacity:1}
+.hero{min-height:100vh;position:relative;display:flex;align-items:flex-end;overflow:hidden}.hero-photo{position:absolute;inset:0;background:linear-gradient(0deg,#090407 4%,rgba(9,4,7,.4) 48%,rgba(9,4,7,.65)),url("assets/images/hero.jpg") center/cover;transform:scale(1.03);animation:zoom 14s ease-out forwards}.hero-photo:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,transparent 20%,rgba(9,4,7,.5) 100%)}.hero-copy{position:relative;z-index:2;width:min(1100px,90%);margin:auto;padding-bottom:13vh}.hero-copy h1{font:500 clamp(82px,15vw,190px)/.72 "Cormorant Garamond";margin:22px 0}.hero-copy h1 span{color:#ef9aaa}.hero-copy p{max-width:580px;color:#c9bcc0;line-height:1.9;font-size:14px}.scroll{position:absolute;right:5%;bottom:30px;color:#806f75;font-size:9px;letter-spacing:.22em;writing-mode:vertical-rl}
+@keyframes zoom{from{transform:scale(1.08)}to{transform:scale(1.03)}}@keyframes up{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+section{position:relative;padding:145px max(22px,7vw);overflow:hidden}.chapter{background:linear-gradient(180deg,#090407,#10060b)}.chapter.alt{background:linear-gradient(180deg,#10060b,#090407)}.head{max-width:760px;margin:0 auto 55px}.kicker{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--pink)}h2{font:500 clamp(52px,7vw,100px)/.85 "Cormorant Garamond";margin:15px 0}.lead{max-width:680px;color:var(--muted);line-height:1.9;font-size:14px}
+.split{max-width:1180px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:7vw;align-items:center}.visual{height:590px;border:1px solid var(--line);position:relative;overflow:hidden;background:linear-gradient(145deg,#1b0b11,#0c0608);border-radius:4px;box-shadow:0 35px 100px rgba(0,0,0,.4)}.visual img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.72) contrast(1.03);position:relative;z-index:2}.visual img[src=""],.photo img[src=""],.visual img:not([src]),.photo img:not([src]){display:none}.caption,.placeholder{position:absolute;left:0;right:0;bottom:0;padding:30px 18px 16px;background:linear-gradient(transparent,rgba(0,0,0,.88));font-size:10px;color:#f0e2e5;letter-spacing:.13em;text-transform:uppercase;z-index:3;pointer-events:none}
+.visual.visual-blur{display:flex;align-items:center;justify-content:center;background:#080306}
+.visual.visual-blur .visual-bg{position:absolute;inset:-30px;width:calc(100% + 60px);height:calc(100% + 60px);object-fit:cover;filter:blur(36px) brightness(.42) saturate(1.3);transform:scale(1.1);z-index:1;pointer-events:none}
+.visual.visual-blur .visual-fit{position:relative;max-width:88%;max-height:88%;width:auto;height:auto;object-fit:contain;display:block;z-index:2;border-radius:14px;box-shadow:0 22px 60px rgba(0,0,0,.75),0 0 0 1px rgba(255,255,255,.08);filter:blur(14px);transition:filter .35s ease}
+.visual.visual-blur.revealed .visual-fit{filter:blur(0) !important}
+.story h3{font:500 43px/1 "Cormorant Garamond";margin:0 0 18px}.story p{font-size:14px;line-height:1.95;color:var(--muted)}.quote{margin:28px 0;border-left:1px solid var(--pink);padding-left:22px;font:400 31px/1.12 "Cormorant Garamond";color:#f2dfe4}
+.chat{max-width:530px;margin:auto;background:linear-gradient(150deg,#1b0c12,#10070b);border:1px solid var(--line);border-radius:25px;padding:24px 18px 25px;box-shadow:0 30px 100px rgba(0,0,0,.45)}.chat-head{display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--line);padding:0 8px 18px;margin-bottom:20px}.avatar{width:43px;height:43px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#8e2e49,#ef9aaa);font-size:20px}.chat-name{font-weight:500}.online{display:block;color:#8b7b81;font-size:9px;margin-top:3px}.bubble{max-width:78%;padding:12px 14px;margin:11px 0;font-size:12px;line-height:1.5;box-shadow:0 8px 20px rgba(0,0,0,.18)}.left{background:#26151c;border-radius:17px 17px 17px 5px;color:#eee}.right{margin-left:auto;background:#d98498;color:#270910;border-radius:17px 17px 5px 17px}.time{font-size:8px;opacity:.55;margin-top:5px;text-align:right}.typing{font-size:10px;color:#7e6e74;margin-top:16px}
+.gallery{max-width:1180px;margin:55px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.photo{aspect-ratio:4/5;position:relative;overflow:hidden;background:#160b10;border:1px solid var(--line)}.photo.wide{grid-column:span 2;aspect-ratio:16/10}.photo img{width:100%;height:100%;object-fit:cover;display:block;position:relative;z-index:2}
+.photo.photo-blur{display:flex;align-items:center;justify-content:center;background:#090407}
+.photo.photo-blur .photo-bg{position:absolute;inset:-25px;width:calc(100% + 50px);height:calc(100% + 50px);object-fit:cover;filter:blur(24px) brightness(.45) saturate(1.25);transform:scale(1.12);z-index:1;pointer-events:none}
+.photo.photo-blur .photo-fit{position:relative;width:100%;height:100%;object-fit:contain;display:block;z-index:2}
+.quote-section{min-height:72vh;display:grid;place-items:center;text-align:center;background:radial-gradient(circle,rgba(191,48,82,.14),transparent 45%),#090407}.quote-section h2{max-width:1050px;font-size:clamp(58px,9vw,130px)}.quote-section p{color:#7f7176}
+.timeline{max-width:1000px;margin:auto;position:relative}.timeline:before{content:"";position:absolute;left:28px;top:0;bottom:0;width:1px;background:#3a2028}.event{position:relative;padding:0 0 80px 90px}.dot{position:absolute;left:21px;top:6px;width:15px;height:15px;border:1px solid var(--pink);border-radius:50%;background:#090407;box-shadow:0 0 0 8px #090407}.event .year{font-size:10px;letter-spacing:.2em;color:var(--pink)}.event h3{font:500 42px "Cormorant Garamond";margin:9px 0}.event p{max-width:650px;color:var(--muted);line-height:1.9}
+.future{max-width:1100px;margin:50px auto;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.future-card{min-height:230px;padding:25px;background:linear-gradient(145deg,#1a0b11,#0c0608);border:1px solid var(--line)}.future-card .icon{font-size:27px}.future-card h3{font:500 30px "Cormorant Garamond";margin:25px 0 8px}.future-card p{font-size:12px;line-height:1.7;color:#8e7e84}
+.phone{width:300px;height:600px;margin:auto;border:7px solid #29141c;border-radius:38px;background:#090507;box-shadow:0 35px 100px #000;overflow:hidden;display:flex;flex-direction:column}.phone-top{height:28px;background:#090507;flex-shrink:0}.phone-screen{flex:1;padding:15px 18px 18px;background:linear-gradient(160deg,#12080c,#241019);display:flex;flex-direction:column}.contact{font-size:9px;color:#806f76}.contact-name{font:500 35px "Cormorant Garamond";margin:6px 0 16px}.phone-messages{margin-top:auto;display:flex;flex-direction:column}.pm{padding:12px 13px;border-radius:17px;background:#2a161e;font-size:12px;margin:7px 0;max-width:80%}.pm.me{margin-left:auto;background:#d98498;color:#250a12;border-radius:17px 17px 5px 17px}.phone-input{display:flex;align-items:center;justify-content:space-between;padding:11px 16px;margin-top:14px;background:#1a0d14;border:1px solid var(--line);border-radius:999px;font-size:11px;color:#7e6b72}.phone-input .send-btn{color:var(--pink);font-size:12px}
+.letter{max-width:800px;margin:auto;padding:clamp(35px,7vw,80px);background:linear-gradient(145deg,#1b0b11,#0c0608);border:1px solid var(--line);box-shadow:0 40px 120px #000}.letter h2{margin-top:0}.letter p{font:400 24px/1.5 "Cormorant Garamond";color:#e0d2d7}.sign{margin-top:45px;font:500 34px "Cormorant Garamond";color:var(--pink)}
+footer{text-align:center;padding:110px 20px;border-top:1px solid var(--line)}footer h2{font-size:75px}
+.reveal{opacity:0;transform:translateY(35px);transition:1s}.reveal.show{opacity:1;transform:none}
+@media(max-width:800px){.split{grid-template-columns:1fr}.visual{height:460px}.gallery{grid-template-columns:1fr 1fr}.photo.wide{grid-column:span 2}.future{grid-template-columns:1fr 1fr}.phone{margin:auto}section{padding-top:105px;padding-bottom:105px}.hero-copy h1{font-size:21vw}}
+@media(max-width:500px){.gallery{grid-template-columns:1fr}.photo.wide{grid-column:auto}.future{grid-template-columns:1fr}.login-card{padding:38px 22px}}
+</style>
+</head>
+<body class="lock">
+<div id="hearts"></div><div class="noise"></div><div id="progress"></div>
+
+<div id="login">
+ <div class="login-orb"></div>
+ <div class="login-card">
+  <div class="eyebrow">Private · Only for Keerthi</div>
+  <h1>Our little<br>world. ❤️</h1>
+  <p>Before you enter… prove you're the girl<br>who owns this story.</p>
+  <div class="field"><label>01 · Unna naan epdi koopduven?</label><input id="nick" placeholder="Hint: Thango / Alagi / Ammu..." autocomplete="off"></div>
+  <div class="field"><label>02 · Our secret password</label><input id="pass" type="password" placeholder="DDMMYYYY" autocomplete="off"></div>
+  <button class="btn" onclick="unlock()">Open our chat ❤️</button>
+  <div class="error" id="error"></div>
+  <p class="hint">Password hint: the day I asked you to be mine.</p>
+ </div>
+</div>
+
+<main id="main">
+<nav><a href="#begin">2019</a><a href="#firsts">Firsts</a><a href="#ooi">Ooi</a><a href="#chennai">Chennai</a><a href="#now">Now</a><a href="#future">Future</a></nav>
+
+<section class="hero">
+ <div class="hero-photo"></div>
+ <div class="hero-copy reveal">
+  <div class="eyebrow">26 · 10 · 2001 · Happy Birthday</div>
+ 
+<h1>For <span>Keerthi.</span><br>For us.</h1>
+
+<p class="eyebrow">OUR STORY ❤️</p>
+
+<p>
+  2019-la start aana story, still we are together. ❤️
+</p>
+
+<p>
+  Late-night chats, chinna chinna fights, kovam, sirippu,
+  surprises, pirivu, forgiveness nu evlo nadanthaalum,
+  namma love thirumba thirumba namma rendu perayum
+  serthu vachirukku.
+</p>
+
+<p>
+  Idhu just oru love story illa, Keerthi…
+  idhu namma memories, namma feelings, namma rendu
+  peroda journey. Evlo changes vandhaalum,
+  en heart-ku favourite person eppovume nee dhaan.
+</p>
+
+<p class="closing">
+  From all the memories we've made to all the dreams
+  we're yet to live… this story is still ours. 🥹❤️
+</p>
+
+<p class="forever">
+  2019 → 2026 → Us, always. ♾️
+</p>
+
+<div class="scroll">SCROLL · OUR STORY ↓</div>
+
+</section>
+
+<section class="chapter" id="begin">
+
+<div class="head reveal">
+  <div class="kicker">01 · 2019</div>
+  <h2>The chat<br>before the love.</h2>
+  <p class="lead">
+    Back in 2019, we were just two class reps — 
+    the girl rep and the boys rep. 😂❤️
+    Ellarum “Rep-um rep-um love pannina epdi irukkum?” 
+    nu tease pannumbodhu, enakkum oru chinna thought…
+    “Rep-ku rep-ku love-aa?” nu!
+
+    Nee vera romba azhaga iruppa, Keerthi…
+    maybe that's when I started noticing you a little more.
+    Aana appo enakkே theriyala, those small conversations
+    would slowly become my favourite part of every day.
+
+    Somewhere between our chats, un smile, un character,
+    and those little moments… I started falling for you.
+    ❤️ And without even realising it, my story was
+    beginning to become OUR story.
+  </p>
+</div>
+
+ <div class="split reveal">
+  <div class="chat">
+   <div class="chat-head"><div class="avatar">🦚</div><div><div class="chat-name">🎈</div><span class="online">our beginning</span></div></div>
+   <div class="bubble left">Ooi veera?</div>
+   <div class="bubble right">Sollu keerthi, saptaya enna pandra?</div>
+   <div class="bubble left">sapten da rep uh😂 </div>
+   <div class="bubble right">Rep-ku rep-ku love-aa? 👀 veliya pesikiranga😂</div>
+   <div class="bubble left">Oh apdi, pesuna pesattum😂</div>
+   <div class="bubble right">Confused🙃</div>
+   <div class="typing">That “Confusion” became a lifetime.</div>
+  </div>
+  
+<div class="story">
+  <h3>I didn't know the teasing would become our story.</h3>
+
+  <p>
+    I can never forget our first days in college, Keerthi. ❤️
+    College kulla namma rendu perum suthitu,
+    konjam distance-la ninnu oruthar oruthar paathutu,
+    chinna chinna conversations share pannitu irundha
+    andha days… everything felt so new and special.
+
+    Appo namma love story ivlo beautiful-ah maarum nu
+    enakku theriyala. But looking back, adhu dhaan
+    namma story-oda cutest beginning.
+
+    Sometimes, enakku thirumba andha starting days-ku
+    poganum nu thonum… unnai first time paatha andha
+    feeling, unna pudhusa love panna aarambicha andha
+    moments ellathayum marubadiyum feel pannanum. 🥹❤️
+  </p>
+
+  <div class="quote">
+    “If I could go back to the beginning, I'd still find you
+    and fall in love with you all over again.”
+  </div>
+</div>
+
+ </div>
+ <div class="gallery reveal"><div class="photo wide"><img src="assets/images/2019-college.jpg"><div class="caption">2019 · Fav pic</div></div><div class="photo"><img src="assets/images/hand.jpg"><div class="caption">Favorites</div></div></div>
+</section>
+
+<section class="quote-section reveal"><div><h2>“Enakku ulagathuleye pudicha ponnu nee dhaan, Keerthi.”</h2><p>Still. ❤️</p></div></section>
+
+<section class="chapter alt" id="firsts">
+
+<div class="head reveal">
+  <div class="kicker">02 · Our Firsts</div>
+
+  <h2>Every first<br>became an ours.</h2>
+
+  <p class="lead">
+    Our first theatre, first movie, first Bike ride, first selfie…
+    every little first became a memory I'll always carry. ❤️
+
+    College cut adichuttu namma suthuna days,
+    unna love propose pannalama venama nu naan yosichadhu…
+    oru vazhiya propose pannadhum, nee "venam" nu sonnadhu 😂
+    andha moment kooda ippo nenacha sirippa varudhu!
+
+    Unna kiss panna try panni, aana onnume nadakkama pona
+    andha cute moments-um 😊❤️
+    Un heart-la enakkana place kidaikkanum nu
+    naan enna ennavo pannirukken.
+
+    Maybe appo ellame perfect-ah nadakkala…
+    konjam late-ah dhaan namma love azhaga develop aachu.
+    But today, when I look back, namma first first-ah senja
+    ovvoru vishayamum enakku romba special.
+
+    Because it wasn't just about doing something for the first time…
+    it was about experiencing it with YOU, Keerthi. 🥹❤️
+  </p>
+</div>
+
+ <div class="gallery reveal">
+    <div class="photo"><img src="assets/images/my-shadow.jpg"><div class="caption">Lifeline</div></div>
+  
+  <div class="photo"><img src="assets/images/first-love.jpg"><div class="caption">First Lovely pic</div></div>
+  <div class="photo"><img src="assets/images/first-selfie.jpeg"><div class="caption">First Selfie</div></div>
+ </div>
+</section>
+
+<section class="chapter" id="ooi">
+ <div class="head reveal"><div class="kicker">03 · That one word</div><h2>Ooi.</h2><p class="lead">Oru two-second message. But for me, it became one of the most special words in our story.</p></div>
+ <div class="split reveal">
+  <div class="visual visual-blur">
+   <img class="visual-bg" src="assets/images/message.jpeg" alt="" aria-hidden="true">
+   <img class="visual-fit" src="assets/images/message.jpeg" alt="The message I still remember" style="filter:blur(14px)">
+   <div class="caption">The message I still remember</div>
+  </div>
+  <div class="story"><div class="chat"><div class="chat-head"><div class="avatar">❤️</div><div><div class="chat-name">🎈</div><span class="online">first message from home</span></div></div><div class="bubble left">ooi</div><div class="bubble right">❤️</div><div class="bubble left">Enna panra?</div><div class="bubble right">Un kooda pesitu iruken.</div></div>
+<p>
+  Nee leave-ku oorukku pona apram, family-ku theriyama
+  namma night chats pannina days… ❤️ Un number-la irundhu
+  nee first anuppuna “Ooi” message, I still remember it, Keerthi. 🥹
+
+  Every weekend unna oorukku vittu vara moments,
+  leave mudinju nee varumbodhu Koripalayam-la wait pannadhu,
+  same bus seat-la and bike-la college-ku travel pannadhu…
+  chinna chinna memories dhaan, but enakku romba special. ❤️
+</p>
+</div>
+ </div>
+ <div class="gallery reveal">
+  <div class="photo photo-blur">
+   <img class="photo-bg" src="assets/images/outing1.jpg" alt="" aria-hidden="true">
+   <img class="photo-fit" src="assets/images/outing1.jpg" alt="Rajaji Park">
+   <div class="caption">Thiruparankundram Park</div>
+  </div>
+  <div class="photo photo-blur">
+   <img class="photo-bg" src="assets/images/outing2.jpg" alt="" aria-hidden="true">
+   <img class="photo-fit" src="assets/images/outing2.jpg" alt="Koripalayam / Bus">
+   <div class="caption">Roaming</div>
+  </div>
+  <div class="photo photo-blur">
+   <img class="photo-bg" src="assets/images/outing3.jpeg" alt="" aria-hidden="true">
+   <img class="photo-fit" src="assets/images/outing3.jpeg" alt="Madurai Roaming">
+   <div class="caption">Koripalayam to mani imbala</div>
+  </div>
+ </div>
+</section>
+
+<section class="chapter alt">
+ <div class="head reveal"><div class="kicker">04 · Birthday one</div><h2>A cake.<br>A ring.<br>You.</h2></div>
+ <div class="split reveal"><div class="visual"><img src="assets/images/first-birthday.jpg"><div class="caption">First Birthday Together</div></div><div class="story"><p>Un first birthday with me. Cake cut pannom. Naan ring pottu vitten. Photos irukku. But photo-la capture aagadhadhu — andha moment-la irundha feeling.</p><div class="quote">“Some memories don't need a reason to stay.”</div></div></div>
+</section>
+
+<section class="chapter">
+ <div class="head reveal"><div class="kicker">05 · College to distance</div><h2>Three years.<br>One “sari.”</h2></div>
+ <div class="timeline">
+  <div class="event reveal"><div class="dot"></div><div class="year">THE CONFESSION</div><h3>I said it first.</h3><p>Naan unna love panren nu sonnen. Nee immediate-aa accept pannala. Waiting. Hurt. Confusion. Then… “sari.”</p></div>
+  <div class="event reveal"><div class="dot"></div><div class="year">COLLEGE END</div><h3>You cried when we left.</h3><p>Three years mudinjadhu. Cinesuvai memories. Home. Distance. But not the end.</p></div>
+ </div>
+ <div class="gallery reveal"><div class="photo wide"><img src="assets/images/cinesuvai.jpg"><div class="caption">Cinesuvai Memory</div></div><div class="photo"><img src="assets/images/college-end.jpg"><div class="caption">College End</div></div></div>
+</section>
+
+<section class="chapter alt">
+ <div class="head reveal"><div class="kicker">06 · MCA days</div><h2>Chennai → Madurai.<br>Every weekend.</h2><p class="lead">Nee Madurai Kamaraj University-la MCA padichitu irundha time. Naan Chennai side. Saturday / Sunday-na destination almost always Madurai.</p></div>
+ <div class="split reveal"><div class="visual"><img src="assets/images/mca-days.jpg"><div class="caption">MCA / Madurai Memory</div></div><div class="story"><h3>Because seeing you was worth the travel.</h3><p>Distance calculate pannala. Weekend calculate pannom. Nee irukkura place-ku varanum — avlo dhaan.</p></div></div>
+</section>
+
+<section class="chapter" id="chennai">
+ <div class="head reveal"><div class="kicker">07 · 2022</div><h2>You came looking<br>for me.</h2></div>
+ <div class="split reveal"><div class="visual"><img src="assets/images/2022-chennai.jpg"><div class="caption">You came to Chennai without telling me.</div></div><div class="story"><p>Without telling me, nee Chennai vandhu enna thedi. Surprise pannita. En face-la reaction eh illa nu nee nenachirukkalam.</p><div class="quote">“I wasn't not happy. I was just completely shocked.”</div><p>Andha naal Chennai-la onna suthinadhu… unforgettable.</p></div></div>
+ <div class="gallery reveal"><div class="photo"><img src="assets/images/chennai-day-1.jpg"><div class="caption">Chennai Day</div></div><div class="photo"><img src="assets/images/chennai-day-2.jpg"><div class="caption">Chennai Memory</div></div><div class="photo"><img src="assets/images/chennai-day-3.jpg"><div class="caption">Our Photo</div></div></div>
+</section>
+
+<section class="quote-section reveal"><div><h2>“You didn't just come to Chennai.<br>You came looking for me.”</h2><p>2022 · One of the days I'll never forget.</p></div></section>
+
+<section class="chapter alt">
+ <div class="head reveal"><div class="kicker">08 · The hard chapter</div><h2>Even after<br>two years apart.</h2></div>
+ <div class="split reveal"><div class="chat"><div class="chat-head"><div class="avatar">❤️</div><div><div class="chat-name">Us</div><span class="online">somewhere between then and now</span></div></div><div class="bubble left">…</div><div class="bubble right">I still believe in us.</div><div class="bubble left">I miss you.</div><div class="bubble right">Nee thirumbi varuva nu enakku theriyum.</div><div class="bubble left">❤️</div></div><div class="story"><p>Nadula rendu years nee pesama poita. Romba kashtapatten. Naanum unna hurt panninen. Neeyum suffer panna.</p><div class="quote">“I believed our love. Kandippa nee varuva nu.”</div><p>Past is past. Naan maranthutten. Mannichutten. Bad memories-ai ketta kanavu madhiri vittuduvom. Inimel next step enna nu mattum yosippom.</p></div></div>
+</section>
+
+<section class="chapter" id="now">
+ <div class="head reveal"><div class="kicker">09 · Now</div><h2>And somehow,<br>we are still here.</h2></div>
+ <div class="split reveal"><div class="visual"><img src="assets/images/recent-chennai.jpg"><div class="caption">Last Month · Chennai Car Day</div></div><div class="story"><p>Naan Chennai-la 3 years ah work pannitu irukken. Veedu kattiten. Growth irukku. Aana indha growth-oda reason-la nee romba perusu.</p><p>Namma happy-ah irukkanum. Namma family sandhoshama irukkanum. Adhukagathaan naan innum hardwork panren.</p><div class="quote">“I am the happiest person in the world because of you.”</div></div></div>
+</section>
+
+<section class="chapter alt">
+ <div class="split reveal">
+  <div class="phone"><div class="phone-top"></div><div class="phone-screen"><div class="contact">My Contacts</div><div class="contact-name">Dikshitha 🦚</div><div class="phone-messages"><div class="pm">Ooi ❤️</div><div class="pm me">Future-ku namma family name?</div><div class="pm">Dikshitha.</div><div class="pm me">Saved. ❤️</div></div><div class="phone-input"><span>Message… ❤️</span><span class="send-btn">➤</span></div></div></div>
+  <div class="story"><div class="kicker">A tiny future secret</div><h2>Dikshitha.</h2><p>“Dikshitha nu than unnaiyum naan save panniruken ennoda mobile-la.” Oru name madhiri theriyalam. Enakku adhu oru tiny future dream.</p><div class="quote">“Maybe some dreams start as a contact name.”</div></div>
+ </div>
+</section>
+
+<section class="chapter" id="future">
+ <div class="head reveal"><div class="kicker">10 · Future us</div><h2>The life I want<br>with you.</h2><p class="lead">Namma nalla valanum. Vaazhvom. Nee en kooda irukkanum. Nee irundha kandippa naan nalla iruppen. Naan. Nee. Namma.</p></div>
+ <div class="future reveal">
+  <div class="future-card"><div class="icon">💍</div><h3>Marriage</h3><p>Oru naal namma “us” forever-aa official aagum.</p></div>
+  <div class="future-card"><div class="icon">🏠</div><h3>Our Home</h3><p>Namakkunu oru veedu. Namakkunu oru peace.</p></div>
+  <div class="future-card"><div class="icon">🚗</div><h3>Our Car</h3><p>More drives. More random “enga polam?” moments.</p></div>
+  <div class="future-card"><div class="icon">👨‍👩‍👧</div><h3>Our Family</h3><p>Namma family. Namma sandhosham. Namma future.</p></div>
+ </div>
+</section>
+
+<section class="chapter alt">
+ <div class="letter reveal">
+  <div class="eyebrow">For my Thango · Alagi · Ammu · Chlo · Thangamaiyilu</div>
+  <h2>One last chat.</h2>
+  <div class="chat" style="max-width:none">
+   <div class="chat-head"><div class="avatar">🦚</div><div><div class="chat-name">Keerthi</div><span class="online">my world</span></div></div>
+   <div class="bubble right">Nee ethukkum kavala padatha.</div>
+   <div class="bubble right">Naan irukken.</div>
+   <div class="bubble right">Unkooda irukken.</div>
+   <div class="bubble right">Eppomey unkooda iruppen. ❤️</div>
+   <div class="bubble left">Promise?</div>
+   <div class="bubble right">Promise.</div>
+  </div>
+  <p>Enaku ulagathuleye pudicha ponnu nee dhaan, Keerthi.</p>
+  <p>Love na ennanu theriyatha enakku ellam solli kuduthadhu nee dhaan. Nee illana naan vera madhiri aagiruppen.</p>
+  <p>Nee ponaalum naan unna thedi varuven. Namma onna irupom. Onna vaazhvom.</p>
+  <p>Unna nalla pathupen. Neeyum enna pathupanu theriyum. Unna naan engayum vittu kudukka maten.</p>
+  <p>Thanks for being with me, Keethis.</p>
+  <div class="sign">Happy Birthday di my dear Alagiiii ❤️</div>
+ </div>
+</section>
+
+<footer class="reveal"><div class="eyebrow">2019 → 2026 → ∞</div><h2>Our story<br>isn't finished.</h2><p>Next chapter: us.</p></footer>
+</main>
+
+<script>
+const heartBox=document.getElementById('hearts');
+for(let i=0;i<28;i++){const s=document.createElement('span');s.className='heart';s.textContent=['♥','♡','❤'][i%3];s.style.left=Math.random()*100+'%';s.style.bottom=(-10-Math.random()*40)+'px';s.style.animationDelay=(Math.random()*8)+'s';s.style.animationDuration=(7+Math.random()*8)+'s';s.style.fontSize=(8+Math.random()*12)+'px';heartBox.appendChild(s)}
+function unlock(){
+ const n=(document.getElementById('nick').value.trim().toLowerCase()) || "chlo", p=(document.getElementById('pass').value.trim()) || "26082019";
+ const names=['thango','chlo','ammu','thangamaiyilu','alagi','keethis','keerthi','peacock'];
+ if(names.includes(n)&&p==='26082019'){document.getElementById('login').classList.add('login-out');document.body.classList.remove('lock');document.getElementById('main').classList.add('ready');setTimeout(()=>document.getElementById('login').remove(),1200)}
+ else document.getElementById('error').textContent='Hmm… namma secret correct-aa enter pannu ❤️';
+}
+document.getElementById('pass').addEventListener('keydown',e=>{if(e.key==='Enter')unlock()});
+addEventListener('scroll',()=>{let h=document.documentElement.scrollHeight-innerHeight;document.getElementById('progress').style.width=(scrollY/h*100)+'%'});
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(x=>obs.observe(x));
+document.querySelectorAll('.visual.visual-blur').forEach(box => {
+ box.addEventListener('click', () => box.classList.toggle('revealed'));
+ if (!box.querySelector('.visual-bg')) {
+  const mainImg = box.querySelector('img');
+  if (mainImg) {
+   const bg = document.createElement('img');
+   bg.className = 'visual-bg';
+   bg.src = mainImg.src;
+   bg.alt = '';
+   bg.setAttribute('aria-hidden', 'true');
+   box.insertBefore(bg, mainImg);
+   mainImg.classList.add('visual-fit');
+  }
+ }
+});
+document.querySelectorAll('.photo.photo-blur').forEach(box => {
+ if (!box.querySelector('.photo-bg')) {
+  const mainImg = box.querySelector('img:not(.photo-bg)');
+  if (mainImg) {
+   const bg = document.createElement('img');
+   bg.className = 'photo-bg';
+   bg.src = mainImg.src;
+   bg.alt = '';
+   bg.setAttribute('aria-hidden', 'true');
+   box.insertBefore(bg, mainImg);
+   mainImg.classList.add('photo-fit');
+  }
+ }
+});
+document.querySelectorAll('.photo, .visual').forEach(box => {
+ box.querySelectorAll('img').forEach(img => {
+  const onError = () => { img.style.display = 'none'; };
+  if (img.complete) {
+   if (img.naturalWidth === 0 && img.src && !img.src.endsWith('/')) onError();
+  } else {
+   img.addEventListener('error', onError);
+  }
+ });
+});
+</script>
+</body>
+</html>
