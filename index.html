@@ -348,7 +348,9 @@
     }
 
     @keyframes btnPulse {
-      0%, 100% {
+
+      0%,
+      100% {
         filter: brightness(1)
       }
 
@@ -3850,6 +3852,23 @@
       }
     }, { passive: true });
   </script>
+
+  <script>
+    document.addEventListener('contextmenu', e => e.preventDefault());
+
+    document.addEventListener('keydown', function (e) {
+      if (
+        e.key === 'F12' ||
+        (e.ctrlKey && e.shiftKey &&
+          ['I', 'J', 'C'].includes(e.key.toUpperCase())) ||
+        (e.ctrlKey && e.key.toUpperCase() === 'U')
+      ) {
+        e.preventDefault();
+      }
+    });
+  </script>
+</body>
+
 </body>
 
 </html>
